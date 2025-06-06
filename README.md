@@ -15,24 +15,42 @@ A minimal CMake learning tool and template for C++ projects.
 
 ## 📁 Project Structure
 
+If you use this repository as a template, read this description!
+
+- Folders such as `apps`, `utils` are just examples for organizing your `.cpp` files.  
+  You can use any folder names and as many folders/subfolders as you like.
+- The `bin` folder is just a suggested name for your build output.  
+  You can change it to `build`, `out`, or anything else.
+
 ```
 .
-├── apps/           # Application source files (e.g., main.cpp)
-├── utils/          # Utility source files (e.g., nRoot.cpp)
-├── bin/            # (Created by you) Build output directory
-├── CMakeLists.txt  # Main CMake configuration file
-└── readme.md       # This file
+├── apps/           # Main source files (e.g., main.cpp) [store in any folder you prefer]
+├── utils/          # Utility source files (e.g., nRoot.cpp) [store in any folder you prefer]
+│                   # The number and names of these folders are up to you.
+│
+├── bin/            # Build output directory, compiled files (e.g., app.exe)
+│
+├── CMakeLists.txt  # Main CMake configuration file (required)
+│
+├── pages/          # Extra markdown tutorial files (optional, can be deleted)
+│
+└── readme.md       # This file (optional, can be deleted)
 ```
 
 ---
 
 ## 🚀 How to Build and Run
 
+Before you begin, **make sure you have created a `CMakeLists.txt` file** in your project root.  
+> **Note:** In this project, a suitable `CMakeLists.txt` is already provided in the same folder as this `readme.md`.  
+> You can review or edit it as needed before following the steps below.  
+> [View CMakeLists.txt](CMakeLists.txt)
+
 ### 1. Configure the Project
 
 Open a terminal in the project root and run:
 
-```cmd
+```sh
 cmake -S . -B bin
 ```
 
@@ -43,7 +61,7 @@ cmake -S . -B bin
 
 After configuration, build the project with:
 
-```cmd
+```sh
 cmake --build bin
 ```
 
@@ -54,13 +72,13 @@ cmake --build bin
 
 From the project root, run:
 
-```cmd
-bin\app.exe
+```sh
+bin/app.exe
 ```
 or, if you need to pass arguments:
 
-```cmd
-bin\app.exe <base> <exponent>
+```sh
+bin/app.exe <base> <exponent>
 ```
 
 ---
@@ -70,6 +88,7 @@ bin\app.exe <base> <exponent>
 - You can change the build directory name (`bin`) to anything you like (e.g., `build`, `out`).
 - To clean the build, simply delete the `bin` directory.
 - If you change the generator or toolchain, always delete the build directory and re-run the configuration step.
+- The `pages/` folder contains extra markdown tutorials for CMake (optional).
 
 ---
 
