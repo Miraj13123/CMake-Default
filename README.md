@@ -4,6 +4,15 @@ A minimal CMake learning tool and template for C++ projects.
 
 ---
 
+## 📦 Requirements
+
+- **CMake** (version 3.5 or newer) must be installed and available in your PATH.
+- A **C++ compiler** must be installed and available in your PATH:
+  - For Windows: [MinGW-w64](https://www.mingw-w64.org/), MSVC Build Tools, or Clang
+  - For Linux/macOS: GCC or Clang
+
+---
+
 ## 📁 Project Structure
 
 ```
@@ -84,6 +93,14 @@ bin\app.exe <base> <exponent>
 
 - [CMake Official Documentation](https://cmake.org/cmake/help/latest/)
 - [Modern CMake Tutorial](https://cliutils.gitlab.io/modern-cmake/)
+- [pages/page1.md](pages/page1.md)
+- [pages/page2.md](pages/page2.md)
+- [pages/page3.md](pages/page3.md)
+- [pages/page4.md](pages/page4.md)
+- [pages/page5.md](pages/page5.md)
+- [pages/page6.md](pages/page6.md)
+- [pages/page7.md](pages/page7.md)
+- [pages/page8.md](pages/page8.md)
 
 ---
 
