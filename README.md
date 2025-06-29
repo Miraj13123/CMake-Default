@@ -8,8 +8,7 @@ A minimal CMake learning tool and template for C++ projects.
 
 - **CMake** (version 3.5 or newer) must be installed and available in your PATH.
 - A **C++ compiler** must be installed and available in your PATH:
-  - For Windows: [MinGW-w64](https://www.mingw-w64.org/), MSVC Build Tools, or Clang
-  - For Linux/macOS: GCC or Clang
+  - For C++ Compilers: [Visit This Link](https://github.com/Miraj13123/extras/new/main)
 
 ---
 
