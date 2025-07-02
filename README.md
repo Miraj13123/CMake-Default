@@ -50,6 +50,10 @@ Before you begin, **make sure you have created a `CMakeLists.txt` file** in your
 Open a terminal in the project root and run:
 
 ```sh
+mkdir bin
+```
+
+```sh
 cmake -S . -B bin -G "MinGW Makefiles"
 ```
 
