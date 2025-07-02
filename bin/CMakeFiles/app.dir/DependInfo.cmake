@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/INVENTORY/codx/cpp/cmake/apps/calc.cpp" "CMakeFiles/app.dir/apps/calc.cpp.obj" "gcc" "CMakeFiles/app.dir/apps/calc.cpp.obj.d"
-  "D:/INVENTORY/codx/cpp/cmake/utils/nPow.cpp" "CMakeFiles/app.dir/utils/nPow.cpp.obj" "gcc" "CMakeFiles/app.dir/utils/nPow.cpp.obj.d"
-  "D:/INVENTORY/codx/cpp/cmake/utils/nRoot.cpp" "CMakeFiles/app.dir/utils/nRoot.cpp.obj" "gcc" "CMakeFiles/app.dir/utils/nRoot.cpp.obj.d"
+  "D:/INVENTORY/codx/cpp/CMake_Defaults/apps/calc.cpp" "CMakeFiles/app.dir/apps/calc.cpp.obj" "gcc" "CMakeFiles/app.dir/apps/calc.cpp.obj.d"
+  "D:/INVENTORY/codx/cpp/CMake_Defaults/utils/nPow.cpp" "CMakeFiles/app.dir/utils/nPow.cpp.obj" "gcc" "CMakeFiles/app.dir/utils/nPow.cpp.obj.d"
+  "D:/INVENTORY/codx/cpp/CMake_Defaults/utils/nRoot.cpp" "CMakeFiles/app.dir/utils/nRoot.cpp.obj" "gcc" "CMakeFiles/app.dir/utils/nRoot.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

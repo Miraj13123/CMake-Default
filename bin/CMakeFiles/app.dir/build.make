@@ -52,10 +52,10 @@ RM = D:\INVENTORY\.SYSTEM\CMake\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\INVENTORY\codx\cpp\cmake
+CMAKE_SOURCE_DIR = D:\INVENTORY\codx\cpp\CMake_Defaults
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\INVENTORY\codx\cpp\cmake\bin
+CMAKE_BINARY_DIR = D:\INVENTORY\codx\cpp\CMake_Defaults\bin
 
 # Include any dependencies generated for this target.
 include CMakeFiles/app.dir/depend.make
@@ -72,46 +72,46 @@ CMakeFiles/app.dir/codegen:
 .PHONY : CMakeFiles/app.dir/codegen
 
 CMakeFiles/app.dir/apps/calc.cpp.obj: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/apps/calc.cpp.obj: D:/INVENTORY/codx/cpp/cmake/apps/calc.cpp
+CMakeFiles/app.dir/apps/calc.cpp.obj: D:/INVENTORY/codx/cpp/CMake_Defaults/apps/calc.cpp
 CMakeFiles/app.dir/apps/calc.cpp.obj: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\INVENTORY\codx\cpp\cmake\bin\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/app.dir/apps/calc.cpp.obj"
-	D:\INVENTORY\code\CBlocks-ROOT\root.codeblocks.system.file\CodeBlocks\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/apps/calc.cpp.obj -MF CMakeFiles\app.dir\apps\calc.cpp.obj.d -o CMakeFiles\app.dir\apps\calc.cpp.obj -c D:\INVENTORY\codx\cpp\cmake\apps\calc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\INVENTORY\codx\cpp\CMake_Defaults\bin\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/app.dir/apps/calc.cpp.obj"
+	D:\INVENTORY\code\CBlocks-ROOT\root.codeblocks.system.file\CodeBlocks\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/apps/calc.cpp.obj -MF CMakeFiles\app.dir\apps\calc.cpp.obj.d -o CMakeFiles\app.dir\apps\calc.cpp.obj -c D:\INVENTORY\codx\cpp\CMake_Defaults\apps\calc.cpp
 
 CMakeFiles/app.dir/apps/calc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/apps/calc.cpp.i"
-	D:\INVENTORY\code\CBlocks-ROOT\root.codeblocks.system.file\CodeBlocks\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\INVENTORY\codx\cpp\cmake\apps\calc.cpp > CMakeFiles\app.dir\apps\calc.cpp.i
+	D:\INVENTORY\code\CBlocks-ROOT\root.codeblocks.system.file\CodeBlocks\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\INVENTORY\codx\cpp\CMake_Defaults\apps\calc.cpp > CMakeFiles\app.dir\apps\calc.cpp.i
 
 CMakeFiles/app.dir/apps/calc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/apps/calc.cpp.s"
-	D:\INVENTORY\code\CBlocks-ROOT\root.codeblocks.system.file\CodeBlocks\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\INVENTORY\codx\cpp\cmake\apps\calc.cpp -o CMakeFiles\app.dir\apps\calc.cpp.s
+	D:\INVENTORY\code\CBlocks-ROOT\root.codeblocks.system.file\CodeBlocks\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\INVENTORY\codx\cpp\CMake_Defaults\apps\calc.cpp -o CMakeFiles\app.dir\apps\calc.cpp.s
 
 CMakeFiles/app.dir/utils/nPow.cpp.obj: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/utils/nPow.cpp.obj: D:/INVENTORY/codx/cpp/cmake/utils/nPow.cpp
+CMakeFiles/app.dir/utils/nPow.cpp.obj: D:/INVENTORY/codx/cpp/CMake_Defaults/utils/nPow.cpp
 CMakeFiles/app.dir/utils/nPow.cpp.obj: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\INVENTORY\codx\cpp\cmake\bin\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/utils/nPow.cpp.obj"
-	D:\INVENTORY\code\CBlocks-ROOT\root.codeblocks.system.file\CodeBlocks\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/utils/nPow.cpp.obj -MF CMakeFiles\app.dir\utils\nPow.cpp.obj.d -o CMakeFiles\app.dir\utils\nPow.cpp.obj -c D:\INVENTORY\codx\cpp\cmake\utils\nPow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\INVENTORY\codx\cpp\CMake_Defaults\bin\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/utils/nPow.cpp.obj"
+	D:\INVENTORY\code\CBlocks-ROOT\root.codeblocks.system.file\CodeBlocks\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/utils/nPow.cpp.obj -MF CMakeFiles\app.dir\utils\nPow.cpp.obj.d -o CMakeFiles\app.dir\utils\nPow.cpp.obj -c D:\INVENTORY\codx\cpp\CMake_Defaults\utils\nPow.cpp
 
 CMakeFiles/app.dir/utils/nPow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/utils/nPow.cpp.i"
-	D:\INVENTORY\code\CBlocks-ROOT\root.codeblocks.system.file\CodeBlocks\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\INVENTORY\codx\cpp\cmake\utils\nPow.cpp > CMakeFiles\app.dir\utils\nPow.cpp.i
+	D:\INVENTORY\code\CBlocks-ROOT\root.codeblocks.system.file\CodeBlocks\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\INVENTORY\codx\cpp\CMake_Defaults\utils\nPow.cpp > CMakeFiles\app.dir\utils\nPow.cpp.i
 
 CMakeFiles/app.dir/utils/nPow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/utils/nPow.cpp.s"
-	D:\INVENTORY\code\CBlocks-ROOT\root.codeblocks.system.file\CodeBlocks\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\INVENTORY\codx\cpp\cmake\utils\nPow.cpp -o CMakeFiles\app.dir\utils\nPow.cpp.s
+	D:\INVENTORY\code\CBlocks-ROOT\root.codeblocks.system.file\CodeBlocks\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\INVENTORY\codx\cpp\CMake_Defaults\utils\nPow.cpp -o CMakeFiles\app.dir\utils\nPow.cpp.s
 
 CMakeFiles/app.dir/utils/nRoot.cpp.obj: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/utils/nRoot.cpp.obj: D:/INVENTORY/codx/cpp/cmake/utils/nRoot.cpp
+CMakeFiles/app.dir/utils/nRoot.cpp.obj: D:/INVENTORY/codx/cpp/CMake_Defaults/utils/nRoot.cpp
 CMakeFiles/app.dir/utils/nRoot.cpp.obj: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\INVENTORY\codx\cpp\cmake\bin\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/app.dir/utils/nRoot.cpp.obj"
-	D:\INVENTORY\code\CBlocks-ROOT\root.codeblocks.system.file\CodeBlocks\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/utils/nRoot.cpp.obj -MF CMakeFiles\app.dir\utils\nRoot.cpp.obj.d -o CMakeFiles\app.dir\utils\nRoot.cpp.obj -c D:\INVENTORY\codx\cpp\cmake\utils\nRoot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\INVENTORY\codx\cpp\CMake_Defaults\bin\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/app.dir/utils/nRoot.cpp.obj"
+	D:\INVENTORY\code\CBlocks-ROOT\root.codeblocks.system.file\CodeBlocks\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/utils/nRoot.cpp.obj -MF CMakeFiles\app.dir\utils\nRoot.cpp.obj.d -o CMakeFiles\app.dir\utils\nRoot.cpp.obj -c D:\INVENTORY\codx\cpp\CMake_Defaults\utils\nRoot.cpp
 
 CMakeFiles/app.dir/utils/nRoot.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/utils/nRoot.cpp.i"
-	D:\INVENTORY\code\CBlocks-ROOT\root.codeblocks.system.file\CodeBlocks\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\INVENTORY\codx\cpp\cmake\utils\nRoot.cpp > CMakeFiles\app.dir\utils\nRoot.cpp.i
+	D:\INVENTORY\code\CBlocks-ROOT\root.codeblocks.system.file\CodeBlocks\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\INVENTORY\codx\cpp\CMake_Defaults\utils\nRoot.cpp > CMakeFiles\app.dir\utils\nRoot.cpp.i
 
 CMakeFiles/app.dir/utils/nRoot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/utils/nRoot.cpp.s"
-	D:\INVENTORY\code\CBlocks-ROOT\root.codeblocks.system.file\CodeBlocks\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\INVENTORY\codx\cpp\cmake\utils\nRoot.cpp -o CMakeFiles\app.dir\utils\nRoot.cpp.s
+	D:\INVENTORY\code\CBlocks-ROOT\root.codeblocks.system.file\CodeBlocks\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\INVENTORY\codx\cpp\CMake_Defaults\utils\nRoot.cpp -o CMakeFiles\app.dir\utils\nRoot.cpp.s
 
 # Object files for target app
 app_OBJECTS = \
@@ -129,7 +129,7 @@ app.exe: CMakeFiles/app.dir/build.make
 app.exe: CMakeFiles/app.dir/linkLibs.rsp
 app.exe: CMakeFiles/app.dir/objects1.rsp
 app.exe: CMakeFiles/app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\INVENTORY\codx\cpp\cmake\bin\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable app.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\INVENTORY\codx\cpp\CMake_Defaults\bin\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable app.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\app.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -141,6 +141,6 @@ CMakeFiles/app.dir/clean:
 .PHONY : CMakeFiles/app.dir/clean
 
 CMakeFiles/app.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\INVENTORY\codx\cpp\cmake D:\INVENTORY\codx\cpp\cmake D:\INVENTORY\codx\cpp\cmake\bin D:\INVENTORY\codx\cpp\cmake\bin D:\INVENTORY\codx\cpp\cmake\bin\CMakeFiles\app.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\INVENTORY\codx\cpp\CMake_Defaults D:\INVENTORY\codx\cpp\CMake_Defaults D:\INVENTORY\codx\cpp\CMake_Defaults\bin D:\INVENTORY\codx\cpp\CMake_Defaults\bin D:\INVENTORY\codx\cpp\CMake_Defaults\bin\CMakeFiles\app.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/app.dir/depend
 

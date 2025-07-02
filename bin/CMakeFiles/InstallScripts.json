@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"D:/INVENTORY/codx/cpp/cmake/bin/cmake_install.cmake"
+		"D:/INVENTORY/codx/cpp/CMake_Defaults/bin/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

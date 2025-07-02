@@ -1,2 +1,2 @@
 CMakeFiles/app.dir/utils/nPow.cpp.obj: \
- D:\INVENTORY\codx\cpp\cmake\utils\nPow.cpp
+ D:\INVENTORY\codx\cpp\CMake_Defaults\utils\nPow.cpp

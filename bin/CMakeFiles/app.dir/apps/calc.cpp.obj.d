@@ -1,5 +1,5 @@
 CMakeFiles/app.dir/apps/calc.cpp.obj: \
- D:\INVENTORY\codx\cpp\cmake\apps\calc.cpp \
+ D:\INVENTORY\codx\cpp\CMake_Defaults\apps\calc.cpp \
  D:/INVENTORY/code/CBlocks-ROOT/root.codeblocks.system.file/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
  D:/INVENTORY/code/CBlocks-ROOT/root.codeblocks.system.file/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  D:/INVENTORY/code/CBlocks-ROOT/root.codeblocks.system.file/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
