@@ -50,7 +50,7 @@ Before you begin, **make sure you have created a `CMakeLists.txt` file** in your
 Open a terminal in the project root and run:
 
 ```sh
-cmake -S . -B bin
+cmake -S . -B bin -G "MinGW Makefiles"
 ```
 
 - `-S .` : Source directory (where `CMakeLists.txt` is located)
@@ -94,7 +94,9 @@ bin/app.exe <base> <exponent>
 ## 💡 CMake Command Reference
 
 - **Configure:**  
-  `cmake -S <source_dir> -B <build_dir>`
+  `cmake -S <source_dir> -B <build_dir> -G <build_tool>`
+  - `-G <build_tool>`: if not set by default CMake uses NMake
+  - Use `-G "MinGW Makefiles"` if you dont wanna use NMake and use the default mingw32-make generator that comes with your MinGW compiler
 
 - **Build:**  
   `cmake --build <build_dir>`
