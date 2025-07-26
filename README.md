@@ -54,7 +54,7 @@ mkdir bin
 ```
 
 ```sh
-cmake -S . -B bin -G "MinGW Makefiles"
+cmake -S . -B bin -G "MinGW Makefiles" -DCMAKE_CXX_COMPILER=g++
 ```
 
 - `-S .` : Source directory (where `CMakeLists.txt` is located)
