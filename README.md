@@ -56,6 +56,9 @@ mkdir bin
 ```sh
 cmake -S . -B bin -G "MinGW Makefiles" -DCMAKE_CXX_COMPILER=g++
 ```
+```bash
+cmake -S . -B bin -G "Unix Makefiles" -DCMAKE_CXX_COMPILER=g++
+```
 
 - `-S .` : Source directory (where `CMakeLists.txt` is located)
 - `-B bin` : Build directory (where build files and cache will be generated)
