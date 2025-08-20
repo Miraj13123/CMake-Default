@@ -8,7 +8,7 @@ A minimal CMake learning tool and template for C++ projects.
 
 - **CMake** (version 3.5 or newer) must be installed and available in your PATH.
 - A **C++ compiler** must be installed and available in your PATH:
-  - For C++ Compilers: [Visit This Link](https://github.com/Miraj13123/extras/blob/main/c_cpp_compilers.md)
+  - For C++ Compilers: [Visit This Link](https://github.com/Miraj13123/extras/blob/main/files%2Fcompilers%2Fc_cpp%2Fc_cpp_compilers.md)
 
 ---
 
