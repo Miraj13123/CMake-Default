@@ -23,3 +23,14 @@ endif()
 #    # Example: enable warnings and treat warnings as errors for Clang with MSVC
 #    target_compile_options(app PRIVATE -Wextra -Wall)
 #endif()     # -Werror
+
+
+
+# Custom target to build and run
+add_custom_target(run
+    COMMAND ${CMAKE_COMMAND} --build ${CMAKE_BINARY_DIR} --target app
+    COMMAND ${CMAKE_BINARY_DIR}/app.exe
+    DEPENDS app
+    WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
+    COMMENT "Building and running app.exe"
+)
