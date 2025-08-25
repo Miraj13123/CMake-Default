@@ -1,11 +1,17 @@
 #include <iostream>
 #include <iomanip>
-// fuck y copilot, dont suggest any unneccessary things, ididnt tell i wanna add pi or print
 const long double pi = 3.14159265358979323846;
 
-long double nPow(long double base, int exp);
-long double nRoot(long double base, int n);
-long double abs(long double x);
+// sorry i made this repo's code more complex for beginners. u can use easy functions from other file by prototyping. example below
+
+long double nPow(long double base, int exp);     // this a function prototyping, the function exists in utils folder
+                                            // use mingw if you wanna dont wanna use namespace or functions name like 'abs' will conflict
+                                            // even if u didn't include cmath or any standard lib but clang stictly adds them or checks similarity
+                                            //                                      use mingw if u wanna avoid this issue
+namespace math{
+    long double abs(long double x);
+    long double nRoot(long double base, int n);
+}
 
 int main(int argc, char* argv[])
 {
@@ -44,11 +50,11 @@ int main(int argc, char* argv[])
     for (int i = 0; i < 15; i++) {
         long double a = test[i][0];
         long double b = test[i][1];
-        long double root = nRoot(a, b);
+        long double root = math::nRoot(a, b);
 
         std::cout << std::setprecision(0) << b << " root "  << std::setprecision(0) << a << " = " << std::setprecision(3) << root <<" ";
 
-        if( abs(nPow(root, b)-a) > epsilion ) {
+        if( math::abs(nPow(root, b)-a) > epsilion ) {
             std::cout << "is incorrect" << std::endl;
         } else {
             std::cout << "is correct" << std::endl;

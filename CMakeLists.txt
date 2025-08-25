@@ -7,7 +7,7 @@ project(Calculator LANGUAGES CXX)  # project name "Calculator", Language "CXX" m
 file(GLOB_RECURSE ALL_CPP_FILES CONFIGURE_DEPENDS "${CMAKE_SOURCE_DIR}/*.cpp")
 
 # Exclude files from the bin directory [ cause we are going to use bin to build the project ]
-list(FILTER ALL_CPP_FILES EXCLUDE REGEX ".*/bin/.*")
+list(FILTER ALL_CPP_FILES EXCLUDE REGEX ".*/.*bin.*/.*")
 
 add_executable(app ${ALL_CPP_FILES})  # will create a app.exe where ever i build the project
 
@@ -19,7 +19,7 @@ if(MINGW)  # seting flags for GNU/ MinGW setup
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static-libgcc -static-libstdc++")
 endif()
 
-if(MSVC AND CMAKE_CXX_COMPILER_ID STREQUAL "Clang")  # seting flags for clang+MSVC setup
-    # Example: enable warnings and treat warnings as errors for Clang with MSVC
-    target_compile_options(app PRIVATE -Wextra -Wall)
-endif()     # -Werror
+#if(MSVC AND CMAKE_CXX_COMPILER_ID STREQUAL "Clang")  # seting flags for clang+MSVC setup
+#    # Example: enable warnings and treat warnings as errors for Clang with MSVC
+#    target_compile_options(app PRIVATE -Wextra -Wall)
+#endif()     # -Werror

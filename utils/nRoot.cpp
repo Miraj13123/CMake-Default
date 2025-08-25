@@ -1,12 +1,18 @@
 //#include <cmath>
+
+namespace math{
+    long double abs(long double x);
+    long double nRoot(long double base, int n);
+}
+
 long double nPow(long double base, int exp);
 
-long double abs(long double x) // returns the positive value if negative
+long double math::abs(long double x) // returns the positive value if negative
 {
     return (x < 0) ? -x : x;
 }
 
-long double nRoot(long double base, int n)
+long double math::nRoot(long double base, int n)
 {
     long double low = 0;
     long double high = base;
