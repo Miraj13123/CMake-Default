@@ -8,7 +8,7 @@ A minimal CMake learning tool and template for C++ projects.
 
 - **CMake** (version 3.5 or newer) must be installed and available in your PATH.
 - A **C++ compiler** must be installed and available in your PATH:
-  - For C++ Compilers: [Visit This Link](https://github.com/corechunk/extras/blob/main/filescompilers/c_cpp_compilers.md)
+  - For C++ Compilers: [Visit This Link](https://github.com/corechunk/extras/blob/main/files/compilers/c_cpp/c_cpp_compilers.md)
 
 ---
 
