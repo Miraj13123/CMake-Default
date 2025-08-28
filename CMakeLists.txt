@@ -62,7 +62,7 @@ target_link_libraries(app PRIVATE ExternalLibrary) # include -I, -L, -l to the t
 
 # Non-compiler-specific flags
 target_compile_options(app PRIVATE
-    -O2 # Optimization level 2 (GCC/Clang: -O2, MSVC: /O2)
+    #-O2 # Optimization level 2 (GCC/Clang: -O2, MSVC: /O2)
     -Wall # Enable most warnings (GCC/Clang, translated to /W4 for MSVC)
     -Wextra # Enable extra warnings (GCC/Clang, included in /W4 for MSVC)
 )
@@ -86,3 +86,63 @@ add_custom_target(run
     WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
     COMMENT "Building and running app"
 )
+
+
+
+
+
+
+
+# Toolchain-specific flags
+if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
+    set(ASM_FLAG "-S")
+    set(ASM_EXT ".s")
+    set(PREPROCESS_FLAG "-E")
+    set(PREPROCESS_EXT ".resolved.cpp")
+    set(OBJ_FLAG "-c")
+    set(OBJ_EXT ".o")
+elseif(CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
+    set(ASM_FLAG "/FA")
+    set(ASM_EXT ".asm")
+    set(PREPROCESS_FLAG "/P")
+    set(PREPROCESS_EXT ".resolved.cpp")
+    set(OBJ_FLAG "/c")
+    set(OBJ_EXT ".obj")
+endif()
+
+# Custom target to build app and generate intermediates
+add_custom_target(build_with_intermediates
+    COMMAND ${CMAKE_COMMAND} --build ${CMAKE_BINARY_DIR} --target app
+    DEPENDS app
+    WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
+)
+
+# Generate intermediates based on GEN variable (default: all)
+foreach(SOURCE_FILE ${ALL_CPP_FILES})
+    file(RELATIVE_PATH REL_PATH ${CMAKE_SOURCE_DIR} ${SOURCE_FILE})
+    get_filename_component(BASE_NAME ${SOURCE_FILE} NAME_WE)
+    get_filename_component(DIR_PATH ${REL_PATH} DIRECTORY)
+    set(OUT_DIR ${CMAKE_BINARY_DIR}/${DIR_PATH})
+    file(MAKE_DIRECTORY ${OUT_DIR})
+
+    if(NOT DEFINED GEN OR GEN STREQUAL "asm" OR GEN STREQUAL "all")
+        add_custom_command(TARGET build_with_intermediates POST_BUILD
+            COMMAND ${CMAKE_CXX_COMPILER} ${CMAKE_CXX_FLAGS} ${ASM_FLAG} -o ${OUT_DIR}/${BASE_NAME}${ASM_EXT} ${SOURCE_FILE}
+            WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
+        )
+    endif()
+
+    if(NOT DEFINED GEN OR GEN STREQUAL "inc" OR GEN STREQUAL "all")
+        add_custom_command(TARGET build_with_intermediates POST_BUILD
+            COMMAND ${CMAKE_CXX_COMPILER} ${CMAKE_CXX_FLAGS} ${PREPROCESS_FLAG} -o ${OUT_DIR}/${BASE_NAME}${PREPROCESS_EXT} ${SOURCE_FILE}
+            WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
+        )
+    endif()
+
+    if(NOT DEFINED GEN OR GEN STREQUAL "obj" OR GEN STREQUAL "all")
+        add_custom_command(TARGET build_with_intermediates POST_BUILD
+            COMMAND ${CMAKE_CXX_COMPILER} ${CMAKE_CXX_FLAGS} ${OBJ_FLAG} -o ${OUT_DIR}/${BASE_NAME}${OBJ_EXT} ${SOURCE_FILE}
+            WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
+        )
+    endif()
+endforeach()
