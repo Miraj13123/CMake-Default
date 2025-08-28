@@ -1,19 +1,106 @@
-CMakeLists.txt.user
+# General CMake build artifacts (build directories)
+#build/
+#binary/
+#out/
+#*build*/
+#*bin*/
+
+# CMake-specific temporary files and directories
 CMakeCache.txt
-CMakeFiles
-CMakeScripts
-Testing
-Makefile
+CMakeFiles/
+CMakeScripts/
 cmake_install.cmake
 install_manifest.txt
-compile_commands.json
 CTestTestfile.cmake
-_deps
-CMakeUserPresets.json
+Testing/
+CMakeUserPresets.json.bak
 
-# CLion
-#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#  and can be added to the global gitignore or merged into this file.  For a more nuclear
-#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#cmake-build-*
+# Dependency directories
+_deps/
+
+# Compiler-specific outputs (generated during compilation)
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.pdb  # Debug symbols
+*.ilk  # Incremental linker files
+*.gcda # GCC code coverage
+*.gcno # GCC code coverage
+
+# Ninja generator (compilation artifacts)
+build.ninja
+.ninja_deps
+.ninja_log
+
+# Make generator (compilation artifacts)
+Makefile
+
+# Visual Studio compilation artifacts (keep .sln, .vcxproj, .vcxproj.filters)
+*.suo
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+*.tlog
+*.ipch
+*.db  # Visual Studio database files
+Win32/
+x64/
+Debug/
+Release/
+
+# Xcode generator (compilation artifacts)
+*.xcodeproj/
+*.xcworkspace/
+xcuserdata/
+*.pbxproj
+
+# Unix Makefiles generator (compilation artifacts)
+*.make
+
+# CodeBlocks generator (compilation artifacts)
+*.depend
+*.layout
+
+# Eclipse CDT generator (compilation artifacts)
+.settings/
+
+# MinGW and MSYS (compilation artifacts)
+*.exe.stackdump
+*.o.d
+*.def
+
+# General IDE and editor temporary files
+*.swp
+*.swo
+*~
+.#*
+*.bak
+*.tmp
+.vscode/
+.idea/
+*.code-workspace
+
+# Testing and coverage tools
+*.gcov
+lcov.info
+*.profraw
+*.profdata
+
+# Documentation generation
+docs/
+html/
+latex/
+
+# Miscellaneous temporary files
+*.log
+*.cache
+*.patch
+*.diff
+
+# macOS-specific
+.DS_Store
