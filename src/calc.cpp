@@ -68,8 +68,14 @@ int main(int argc, char* argv[])
 
 
 /*
-cmake -S . -B bin -G "MinGW Makefiles"
-cmake --build bin && bin\app.exe
+cmake -S . -B bin -G "Unix Makefiles" -DCMAKE_CXX_COMPILER=g++
+            # -G "Unix Makefiles"
+            # -G "Ninja"
+            # -G "MinGW Makefiles"
+            # -G "Visual Studio 17 2022"
+cmake --build bin
+            # optional --target <target_name>
+                # --target run    {to compile and run}
+                # --target build_with_intermediates
 
-cmake --build bin && bin\app.exe 14 2
 */
