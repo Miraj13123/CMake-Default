@@ -1,4 +1,4 @@
-# cmake_defaults
+# cmake_default
 
 A minimal CMake learning tool and template for C++ projects.
 
@@ -132,4 +132,5 @@ bin/app.exe <base> <exponent>
 ---
 
 Happy Coding! 🚀
+
 
